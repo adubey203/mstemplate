@@ -21,6 +21,9 @@ public class TemplateServiceImpl implements TemplateService {
 
 	@Override
 	public Template getTemplate(String id) {
+
+
+		//REST CALL TO OTHER SERVICE
 		return repository.byId(id);
 	}
 }

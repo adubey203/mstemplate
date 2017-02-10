@@ -1,5 +1,7 @@
-package com.comcast.xfinityhome.mstemplate; /**
- * Created by adubey203 on 2/6/17.
+package com.comcast.xfinityhome.mstemplate;
+
+/*
+  Created by adubey203 on 2/6/17.
  */
 
 import org.springframework.boot.CommandLineRunner;
@@ -18,8 +20,8 @@ public class Application {
 
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-		return args -> {
 
+		return args -> {
 			System.out.println("Following are the beans instantiated by Spring Boot:");
 
 			String[] beanNames = ctx.getBeanDefinitionNames();

@@ -9,15 +9,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  * Created by adubey203 on 2/6/17.
+ * This is a REST end point for your defined "<MicroService>" e.g. TemplateMicroService;
+ * to serve its domain specific requests.
  *
- * Rnam
+ * Please rename this controller according to the Domain/Request that
+ * this micro-service end point needs to serve
+ *
  */
 
 @RestController
 public class TemplateController {
 
 	@Autowired
-	TemplateService service;
+	private TemplateService service;
 
 	@RequestMapping("/template/{id}")
 	public String byId(@PathVariable("id") String id) {
