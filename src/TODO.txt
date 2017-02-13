@@ -1,0 +1,42 @@
+Base Package: com.comcast.xfinityhome
+
+
+A. Java Package Structure:
+--------------------------------------------
+Source Code
+    ---->src
+          <base-package>.<service-name>
+            ----><config>       : Any specific configuration, Service discovery configuration
+            ----><controllers>  : Rest End point, Except request, Validate, delegate processing to services, Return Response
+            ----><services>     : Perform business logic, Also communicate with other services, Delegate to repository
+            ----><validators>   : Perform any validations on the incoming request parameters
+            ----><repository>   : May change the name of this layer to "persistence" or something. But this layer would be responsible
+                                    for persisting data to any end point (RDBMS, NoSQL etc)
+            ----><model>        : Domain objects
+            ----><utility>      : Utility classes
+            ----><exceptions>   : Exception handlers and domain specific exceptions
+
+          resources
+            ----><service-name>.yml
+            ----><log>.xml
+            ---->bootstrap.properties
+            ---->banner.txt
+            ----><custom>.properties
+
+          test
+            <base-package>.<service-name>
+--------------------------------------------
+
+
+Random items:
+
+1. API Documentation options - Swagger??
+2. Service Registry and Discovery - Eureka / Consul / Feign
+3. Service - Spring Boot
+4. Gateway options: kong/Nginx/CB2/PSG/Other
+5. Event Bus : Research about the latency issues with REST endpoints abstracting KAFKA
+6. Logging :
+8. Authorization and Authentication between Micro-Services
+9. External configuration - Spring Cloud Netflix / Eureka Service Discovery / Spring Cloud Consul
+10. Deployment
+11: Add monitoring, health, logging

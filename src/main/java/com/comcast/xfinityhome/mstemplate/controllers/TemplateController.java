@@ -1,4 +1,4 @@
-package com.comcast.xfinityhome.mstemplate.controller;
+package com.comcast.xfinityhome.mstemplate.controllers;
 
 import com.comcast.xfinityhome.mstemplate.services.TemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * This is a REST end point for your defined "<MicroService>" e.g. TemplateMicroService;
  * to serve its domain specific requests.
  *
- * Please rename this controller according to the Domain/Request that
+ * Please rename this controllers according to the Domain/Request that
  * this micro-service end point needs to serve
  *
  */

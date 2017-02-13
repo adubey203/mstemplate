@@ -7,5 +7,5 @@ import com.comcast.xfinityhome.mstemplate.model.Template;
  */
 public interface TemplateService {
 
-    public Template getTemplate(String id);
+	Template getTemplate(String id);
 }

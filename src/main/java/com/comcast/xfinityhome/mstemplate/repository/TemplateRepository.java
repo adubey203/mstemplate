@@ -9,12 +9,13 @@ import com.comcast.xfinityhome.mstemplate.model.Template;
 
 public interface TemplateRepository {
 
-	/**
+	/*
+	/*
 	 * Find an Template Id.
 	 *
 	 * @param  id
 	 * @return Template
 	 */
-	public Template byId(String id);
+	Template byId(String id);
 
 }

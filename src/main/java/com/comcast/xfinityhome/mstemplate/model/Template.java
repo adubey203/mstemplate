@@ -12,9 +12,9 @@ public class Template implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	protected String id;
+	private String id;
 
-	protected String name;
+	private String name;
 
 	protected Template() { }
 
@@ -27,9 +27,10 @@ public class Template implements Serializable {
 	}
 
 	public String getId() {
+
+		// Service specific Implementation
 		return id;
 	}
-
 
 	public void setName(String name) {
 		this.name = name;
